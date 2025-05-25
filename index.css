@@ -1,0 +1,98 @@
+.sidebar {
+  width: 20%;
+  position: fixed;
+  left: 0px;
+  height: 600px;
+  background: #17181d;
+  overflow-y: scroll;
+}
+.hover:hover .icon i{
+  color:#00A6EB !important;
+  background: white !important;
+  border:1px solid #00A6EB !important;
+  transition: 0.6s !important;
+  /* height: 100px; */
+}
+.all-content {
+  width: 80%;
+  position: relative;
+  right: -250px;
+  min-height: 1000px;
+  background: white;
+  overflow: hidden;
+}
+.image {
+  height: 600px;
+  width: 100%;
+  background: url("hero-bg.jpg") center/cover no-repeat rgba(0, 0, 0, 0.386);
+  background-blend-mode: overlay;
+}
+
+.small-menu {
+  display: none;
+}
+
+
+.skills {
+  background: #f4fafd;
+}
+
+
+
+@media screen and (max-width:600px){
+ 
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: 110px;
+    overflow:hidden;
+  }
+  .sidebar .hide{
+    display: none !important;
+  }
+
+  .all-content {
+    width: 100%;
+    position: static;
+    right: 0px;
+    background-position: left;
+    background-size: contain;
+    min-height: 1000px;
+    overflow: hidden;
+    justify-content: start;
+    align-content: start;
+  }
+  .icons i {
+    font-size: 13px;
+    padding: 0px;
+  }
+.image h1{
+  text-align: center;
+}
+  .small-menu {
+    display: block;
+    /* position:fixed; */
+  
+  }
+  .small-menu:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+  }
+  .side-button-close {
+    display:block;
+    position: absolute;
+    right: 0px;
+  }
+  .spacer {
+    display: none !important;
+  }
+  .sidebar .footer {
+    display: none !important;
+  }
+  .icons i:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+ 
+}
